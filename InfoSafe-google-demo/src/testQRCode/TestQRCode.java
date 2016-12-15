@@ -20,6 +20,8 @@ package testQRCode;
 public class TestQRCode {
 	public static void main(String[] args) throws Exception {
         String text = "http://www.baidu.com";
+        //谷歌验证器的url:  secretKey为对应生成的密钥要加入到二维码中
+        //String url="otpauth://totp/Google%3Ayourname@gmail.com?secret="+secretKey+"&issuer=Google";
         QRCodeUtil.encode(text, "h:/png/qq.png", "h:/png", true);
     }
 }
